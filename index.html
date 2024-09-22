@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Slideshow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Slideshow Container -->
+    <div class="slideshow-container">
+
+        <!-- Slide 1 -->
+        <div class="mySlides fade">
+            <img src="images\project1.png" alt="Project 1" class="slide-image">
+            <div class="text-overlay">
+                <h2>Forest Punk 1</h2>
+                <p>A sustainable A-frame home in a forest</p>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="mySlides fade">
+            <img src="images\project2.png" alt="Project 2" class="slide-image">
+            <div class="text-overlay">
+                <h2>Forest Punk 2</h2>
+                <p>A sustainable modern architecture home with a luxury EV</p>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="mySlides fade">
+            <img src="images\project3.png" alt="Project 3" class="slide-image">
+            <div class="text-overlay">
+                <h2>Forest Punk 3</h2>
+                <p>A modern sustainable take on the cabin with an EV sports car</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Dot Navigation -->
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

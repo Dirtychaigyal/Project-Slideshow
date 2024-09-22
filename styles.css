@@ -1,0 +1,81 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #AAB396;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 12px; 
+  }
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Each slide */
+.mySlides {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit cover;
+}
+
+/* Images inside the slide */
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image resizes proportionally */
+}
+
+/* Text overlay for the project title and description */
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75); /* Semi-transparent background */
+    color: white;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Dot navigation container */
+.dot-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styling for each dot */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Active dot with a different color */
+.active {
+    background-color: #717171;
+}
+
+/* Fade animation for the slides */
+.fade {
+    animation: fadeEffect 1.5s;
+}
+
+/* Keyframes for fade transition */
+@keyframes fadeEffect {
+    from {opacity: 0.4} 
+    to {opacity: 1}
+}
